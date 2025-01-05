@@ -5,6 +5,8 @@
 	import { pwaInfo } from 'virtual:pwa-info';
 	const webManifestLink = $derived(pwaInfo ? pwaInfo.webManifest.linkTag : '');
 
+	export const prerender = true;
+
 	let { children } = $props();
 </script>
 

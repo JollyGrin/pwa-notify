@@ -2,6 +2,8 @@
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
 
+	export const prerender = true;
+
 	let notificationInput: string = '';
 	let registration: ServiceWorkerRegistration | null = null;
 	let isSubscribed: boolean = false;
